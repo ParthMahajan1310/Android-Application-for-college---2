@@ -1,0 +1,50 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_Layout"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bc"
+        tools:context="com.example.parth.restart.home">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:background="@drawable/time"
+            android:layout_height="180dp"
+            android:id="@+id/imageView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Time Table"
+            android:id="@+id/textView7"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="44dp"
+            android:textSize="30dp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <ListView android:id="@+id/Left_drawer"
+        android:background="#FFFFFF"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left">
+
+    </ListView>
+
+</android.support.v4.widget.DrawerLayout>
